@@ -1,0 +1,167 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Poppins, sans-serif;
+    background-color: #F4F4F4;
+}
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.hero h2,
+.products h2 {
+    text-align: center;
+    font-size: 6.875em; /* Adjust as needed */
+    color: #282828;
+}
+
+.hero .line1,
+.hero .line2 {
+    display: block;
+    line-height: 1;
+    transition: transform 0.1s ease-out;
+}
+
+.hero .line1 {
+    margin-bottom: 10px; /* Space between the lines */
+}
+
+
+.cans {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    position: relative;
+}
+
+.can img {
+    transition: transform 0.2s ease-out, opacity 0.2s ease-out;
+}
+
+#can1, #can3 {
+    position: absolute;
+    top: 65px;
+}
+
+#can1 {
+    left: -120px;
+}
+
+#can3 {
+    right: -120px;
+}
+
+#can2 {
+    position: relative;
+    height: 414px;
+    width: 160px;
+    z-index: 2;
+}
+
+.products {
+    text-align: center;
+    padding: 50px 20px;
+    height: 70vh;
+}
+
+.product-title h2 {
+    margin-bottom: 20px;
+}
+
+.product-content {
+    display: flex;
+    /*justify-content: space-around;*/
+    height: 100vh;
+    opacity: 0;
+    gap: 320px;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.main-can  {
+    height: 414px;
+    width: 160px;
+}
+
+.product-info {
+    text-align: left;
+    max-width: 400px;
+    position: relative;
+}
+
+.product-info h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.product-info p {
+    font-size: 1em;
+    margin-bottom: 10px;
+}
+
+.product-info ul {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+.product-info ul li {
+    font-size: 1em;
+    margin-bottom: 5px;
+}
+
+.product-details {
+    display: flex;
+    justify-content: space-between;
+}
+
+.ingredients, .nutrition {
+    width: 48%;
+}
+
+.ingredients h4, .nutrition h4 {
+    font-size: 1.2em;
+    margin-bottom: 5px;
+}
+
+.ingredients p, .nutrition p {
+    font-size: 1em;
+}
+
+/* Lottie Animation */
+.card-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    gap: 20px;
+    background-color: white;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    height: 150px;
+    background-color: #F1EEEC;
+    border-radius: 10px;
+    text-align: center;
+    font-family: Poppins, sans-serif;
+    color: #351D88;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.icon {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+}
+
