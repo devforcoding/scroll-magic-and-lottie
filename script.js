@@ -107,9 +107,9 @@ function initLottieAnimation(elementId, path) {
 
 // Initialize animations
 const anim1 = initLottieAnimation('icon1', 'lottie-json/4c_whycanna.json');
-const anim2 = initLottieAnimation('icon2', 'lottie-json/4c_whycanna.json');
-const anim3 = initLottieAnimation('icon3', 'lottie-json/4c_whycanna.json');
-const anim4 = initLottieAnimation('icon4', 'lottie-json/4c_whycanna.json');
+const anim2 = initLottieAnimation('icon2', 'lottie-json/4c_story.json');
+const anim3 = initLottieAnimation('icon3', 'lottie-json/4c_values.json');
+const anim4 = initLottieAnimation('icon4', 'lottie-json/4c_team.json');
 
 // Add event listeners for hover to play animation
 document.getElementById('card1').addEventListener('mouseenter', () => anim1.play());
