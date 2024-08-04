@@ -94,38 +94,33 @@ new ScrollMagic.Scene({
 
 // LOTTIE ANIMATION ICONS
 
-// Icon 1
-lottie.loadAnimation({
-    container: document.getElementById('icon1'), // Required
-    path: 'lottie-json/4c_whycanna.json', // Path to the Lottie animation JSON file
-    renderer: 'svg', // Render method
-    loop: true, // Loop the animation
-    autoplay: true, // Autoplay the animation
-});
+// Function to initialize Lottie animation
+function initLottieAnimation(elementId, path) {
+    return lottie.loadAnimation({
+        container: document.getElementById(elementId),
+        path: path,
+        renderer: 'svg',
+        loop: false,
+        autoplay: false,
+    });
+}
 
-// Icon 2
-lottie.loadAnimation({
-    container: document.getElementById('icon2'), // Required
-    path: 'lottie-json/4c_whycanna.json', // Path to the Lottie animation JSON file
-    renderer: 'svg', // Render method
-    loop: true, // Loop the animation
-    autoplay: true, // Autoplay the animation
-});
+// Initialize animations
+const anim1 = initLottieAnimation('icon1', 'lottie-json/4c_whycanna.json');
+const anim2 = initLottieAnimation('icon2', 'lottie-json/4c_whycanna.json');
+const anim3 = initLottieAnimation('icon3', 'lottie-json/4c_whycanna.json');
+const anim4 = initLottieAnimation('icon4', 'lottie-json/4c_whycanna.json');
 
-// Icon 3
-lottie.loadAnimation({
-    container: document.getElementById('icon3'), // Required
-    path: 'lottie-json/4c_whycanna.json', // Path to the Lottie animation JSON file
-    renderer: 'svg', // Render method
-    loop: true, // Loop the animation
-    autoplay: true, // Autoplay the animation
-});
+// Add event listeners for hover to play animation
+document.getElementById('card1').addEventListener('mouseenter', () => anim1.play());
+document.getElementById('card1').addEventListener('mouseleave', () => anim1.stop());
 
-// Icon 4
-lottie.loadAnimation({
-    container: document.getElementById('icon4'), // Required
-    path: 'lottie-json/4c_whycanna.json', // Path to the Lottie animation JSON file
-    renderer: 'svg', // Render method
-    loop: true, // Loop the animation
-    autoplay: true, // Autoplay the animation
-});
+document.getElementById('card2').addEventListener('mouseenter', () => anim2.play());
+document.getElementById('card2').addEventListener('mouseleave', () => anim2.stop());
+
+document.getElementById('card3').addEventListener('mouseenter', () => anim3.play());
+document.getElementById('card3').addEventListener('mouseleave', () => anim3.stop());
+
+document.getElementById('card4').addEventListener('mouseenter', () => anim4.play());
+document.getElementById('card4').addEventListener('mouseleave', () => anim4.stop());
+
